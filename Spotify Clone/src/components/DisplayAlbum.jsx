@@ -22,11 +22,12 @@ const DisplayAlbum = ({album}) => {
    
     <Navbar/>
     <div className='md:flex text-white gap-4 '>
-        <img src={albumData.image} alt="" />
+        <img src={albumData.image} className='rounded-md'/>
         <div className='flex flex-col gap-4'>
             <p className=' text-xl opacity-70'>Playlist</p>
-            <h1 className='font-bold text-7xl'>{albumData.name}</h1>
-            <p className='text-xl opacity-70'>{albumData.desc}</p>
+            <h1 className={`font-bold text-7xl ${albumData.name.length > 5 ?  'text-4xl' : ''}`}>{albumData.name}</h1>
+
+            <p className='text-xl sm:text-base opacity-70'>{albumData.desc}</p>
             <p></p>
             <div className='flex gap-2'>
             <img src={assets.spotify_logo} className='w-7 h-7'/>

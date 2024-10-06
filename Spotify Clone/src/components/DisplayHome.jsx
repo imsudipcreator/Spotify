@@ -16,7 +16,7 @@ const DisplayHome = () => {
       <div className='my-5 text-2xl flex-col  gap-5  '>
         <h1 className='text-white font-bold text-3xl'>Featured Charts</h1>
         <div className='flex overflow-auto gap-4 justify-start mt-2 '> 
-          {albumsData.map((item,index)=>(<AlbumItem key={index} name={item.name} image={item.image} desc={item.desc} id={item._id}/>))}
+          {albumsData.map((item,index)=>(<AlbumItem key={index} name={item.name} image={item.image} desc={(item.desc).slice(0,19).concat(item.desc.length > 18 ? "..." : "")} id={item._id}/>))}
         </div>
       
       </div>
