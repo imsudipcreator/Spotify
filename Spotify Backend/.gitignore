@@ -1,0 +1,33 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
+config.json
+
+# Build files
+build/
+dist/
+
+# Coverage files
+coverage/
+
+# Node.js-specific files
+npm-debug.log
+package-lock.json
+
+# Express-specific files
+express-session.json
+express-session-store.json
