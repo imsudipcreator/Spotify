@@ -9,7 +9,7 @@ import ListAlbum from './pages/ListAlbum';
 import ListSong from './pages/ListSong';
 import Navbar from './components/Navbar';
 
-export const url =  'http://localhost:3001';
+export const url =  'https://spotify-jpo7.onrender.com';
 
 function App() {
 
